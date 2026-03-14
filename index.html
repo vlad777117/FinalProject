@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Лучший Автосервис">
+    <title>Автосервис</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo1" src="logo.png" alt="logo" />
+      <a class="link" href="index.html"><h2>ОСНОВНАЯ</h2></a>
+      <a class="link" href="index2.html" target="_blank"><h2>ОТЗЫВЫ</h2></a>
+      <a class="link" href="index3.html" target="_blank"><h2>ЦЕНЫ</h2></a>
+      <div class="basic">
+        <h2>РАБОЧЕЕ ВРЕМЯ</h2>
+        <h2>7.00 - 19.00</h2>
+      </div>
+      <div class="basic">
+        <h2>КОНТАКТЫ</h2>
+        <p><a href="tel:+420887778887">+ 420 887 778 887</a></p>
+        <p><a href="mailto:autoservis@gmail.com">autoservis@gmail.com</a></p>
+      </div> 
+    </header>
+    <main>
+      <section class="about ">
+        <img class="cars" src="auto.png" alt="cars" loading="lazy"/>
+        <div class="textAbout">
+          <h2>О нашем автосервисе</h2>
+          <p class="description">
+            Наш автосервис работает уже более 20 лет, предоставляя полный спектр
+            услуг по ремонту и обслуживанию автомобилей. Мы используем только
+            качественные запчасти и современное оборудование, чтобы
+            гарантировать надежность и безопасность вашего автомобиля. Наши
+            опытные мастера знают всё о современных и классических моделях,
+            выполняют диагностику, ремонт двигателя, замену расходников,
+            настройку подвески, шиномонтаж и многое другое. Мы ценим доверие
+            наших клиентов и всегда стремимся к максимально прозрачным и честным
+            ценам.
+          </p>
+        </div>
+        <img class="workers" src="workers.png" alt="guys" loading="lazy" />
+      </section>
+      <section class="sectionTwo">
+        <h2 class="textTwo">Надёжность, проверенная временем</h2>
+
+        <p class="pTwo">
+          Наш автосервис — это сочетание опыта, современных технологий и
+          настоящего уважения к клиенту. Уже более 20 лет мы занимаемся
+          профессиональным ремонтом и техническим обслуживанием автомобилей
+          разных марок и моделей. За это время мы помогли тысячам водителей
+          вернуть их транспорт в идеальное состояние. Мы понимаем, насколько
+          важен автомобиль в повседневной жизни. Именно поэтому работаем быстро,
+          аккуратно и честно. В нашем сервисе проводится комплексная
+          диагностика, ремонт двигателя, обслуживание тормозной системы,
+          подвески, замена расходных материалов и многое другое. Мы используем
+          современное оборудование и качественные комплектующие, чтобы
+          гарантировать безопасность и долговечность выполненных работ. Каждый
+          автомобиль для нас — это ответственность. Наши мастера регулярно
+          повышают квалификацию и следят за новыми технологиями в автомобильной
+          сфере. Мы подробно объясняем клиенту, какие работы необходимы,
+          согласовываем стоимость заранее и никогда не навязываем лишние услуги.
+          Мы ценим доверие наших клиентов и стремимся сделать обслуживание
+          максимально комфортным. Удобная запись, прозрачные цены и внимательное
+          отношение — то, что отличает нас от других. Если вам нужен надежный
+          автосервис, где о вашем автомобиле позаботятся как о своём — вы
+          обратились по адресу.
+        </p>
+      </section>
+
+      <section class="mainForm">
+        <div class="form">
+          <h2 class="extprice">Получите точный расчет стоимости!</h2>
+          <p class="fillform">
+            Заполните форму и в течение некоторого времени вы получите цену.
+          </p>
+        </div>
+        <form
+          class="serviceForm"
+          action="https://formspree.io/f/mgoldwdw"
+          method="POST"
+        >
+          <label for="name"></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше имя"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ваш email"
+            required
+          />
+
+          <label for="tel"></label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Ваш телефон"
+            required
+          />
+
+          <label for="message"></label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Ваше сообщение"
+            required
+          />
+
+          <label for="service"></label>
+
+          <select class="select" id="service" name="service" required>
+            <option class="option" value="diagnostics">Диагностика</option>
+            <option class="option" value="engine">Ремонт двигателя</option>
+            <option class="option" value="tires">Шиномонтаж</option>
+            <option class="option" value="anothe">Другое</option>
+          </select>
+
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="lastinfo">
+      <h2 class="connect">СВЯЗАТЬСЯ С НАМИ:</h2>
+      <h2 class="connectP"><a href="tel:+420887778887">📞+ 420 887 778 887</a></h2>
+      <h2 class="connectP"><a href="mailto:autoservis@gmail.com">✉ autoservis@gmail.com ✉</a></h2>
+      <h2 class="connectt">📍Opletalova 23</h2>
+      <h2 class="join">ЗАПИСЫВАЙТЕСЬ К НАМ</h2>
+    </footer>
+  </body>
+</html>
